@@ -189,11 +189,6 @@
                 <provided.key.alias.password>${env.GLUON_ANDROID_KEYALIAS_PASSWORD}</provided.key.alias.password>
             </properties>
         </profile>
-        <profile>
-            <id>pi</id>
-            <properties>
-                <gluonfx.target>linux-aarch64</gluonfx.target>
-            </properties>
-        </profile>
+    
     </profiles>
 </project>
