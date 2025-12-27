@@ -3,7 +3,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.gluonhq.samples</groupId>
-    <artifactId>hellogluon</artifactId>
+    <artifactId>demowinfx</artifactId>
     <version>1.0.0-SNAPSHOT</version>
     <packaging>jar</packaging>
 
@@ -17,8 +17,8 @@
         <attach.version>4.0.24-SNAPSHOT</attach.version>
         <connect.version>2.0.1</connect.version>
         <javafx.maven.plugin.version>0.0.8</javafx.maven.plugin.version>
-        <gluonfx.maven.plugin.version>1.0.24</gluonfx.maven.plugin.version>
-        <main.class>com.gluonhq.hello.HelloGluonApp</main.class>
+        <gluonfx.maven.plugin.version>1.0.28</gluonfx.maven.plugin.version>
+        <main.class>com.example.App</main.class>
         <app.identifier>${main.class}</app.identifier>
         <app.description>The HelloGluon app</app.description>
         <package.type/>
