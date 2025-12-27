@@ -42,7 +42,7 @@
                 <version>${gluonfx.version}</version>
                 <configuration>
                     <mainClass>com.example.App</mainClass>
-                    <target>win</target>
+                    <target>host</target>
                     <releaseConfiguration>
                         <vendor>YourName</vendor>
                         <description>App Description</description>
