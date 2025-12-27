@@ -41,3 +41,8 @@ jobs:
           cp -r target/gluonfx/x86_64-windows/HelloGluon.exe staging
           cp -r target/gluonfx/x86_64-windows/HelloGluon-1.0.msi staging
 
+      - name: Upload
+        uses: actions/upload-artifact@v4
+        with:
+          name: Package
+          path: staging
