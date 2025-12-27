@@ -31,16 +31,9 @@
                 <groupId>org.openjfx</groupId>
                 <artifactId>javafx-maven-plugin</artifactId>
                 <version>0.0.6</version>
-                <executions>
-                    <execution>
-                        <!-- Default configuration for running -->
-                        <!-- Usage: mvn clean javafx:run -->
-                        <id>default-cli</id>
-                        <configuration>
-                            <mainClass>com.example.App</mainClass>
+                <configuration>
+                      <mainClass>com.example.App</mainClass>
                         </configuration>
-                    </execution>
-                </executions>
             </plugin>
 
             <plugin>
@@ -53,7 +46,7 @@
                     <releaseConfiguration>
                         <vendor>YourName</vendor>
                         <description>App Description</description>
-                        <packageType>msi</packageType> <!-- Use 'msi' or 'exe' -->
+                        <packageType>exe</packageType> <!-- Use 'msi' or 'exe' -->
                     </releaseConfiguration>
                 </configuration>
             </plugin>
