@@ -2,7 +2,7 @@ name: Windows
 
 on:
   push:
-    branches: [ master ]
+    branches: [ main ]
 
 jobs:
   build:
@@ -27,14 +27,11 @@ jobs:
       - name: Make staging directory
         run: mkdir staging
 
-      - name: Gluon License
-        uses: gluonhq/gluon-build-license@v1
-        with:
-          gluon-license: ${{ secrets.GLUON_LICENSE }}
+      
 
       - name: Gluon Build and Package
         shell: cmd
-        run: .\mvnw -Pdesktop gluonfx:build gluonfx:package
+        run: mvn -Pdesktop gluonfx:build gluonfx:package
 
       - name: Copy native bundles to staging
         run: |
