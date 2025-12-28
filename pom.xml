@@ -114,7 +114,7 @@
                 <configuration>
                     <verbose>true</verbose>
                     <target>${gluonfx.target}</target>
-                    <graalvmHome>C:\Program Files\java\graalvm-jdk-21.0.9+7.1</graalvmHome>
+                    
                     <attachList>
                         <list>display</list>
                         <list>lifecycle</list>
