@@ -1,0 +1,86 @@
+Process
+=======
+compile
+
+Command Line
+============
+C:\Program Files\java\graalvm-jdk-21.0.9+7.1\bin\native-image.cmd "-Djdk.internal.lambda.eagerlyInitialize=false" --no-server -H:+SharedLibrary -H:+AddAllCharsets -H:+ReportExceptionStackTraces -H:-DeadlockWatchdogExitOnTimeout "-H:DeadlockWatchdogInterval=0" -H:+RemoveSaturatedTypeFlows -H:+ExitAfterRelocatableImageWrite "-H:TempDirectory=D:\code\javafx\windows\demowinfx\target\gluonfx\x86_64-windows\gvm\tmp" "-H:EnableURLProtocols=http,https" -H:+PrintAnalysisCallTree "-H:Log=registerResource:" "-H:ReflectionConfigurationFiles=D:\code\javafx\windows\demowinfx\target\gluonfx\x86_64-windows\gvm\reflectionconfig-x86_64-windows.json" "-H:JNIConfigurationFiles=D:\code\javafx\windows\demowinfx\target\gluonfx\x86_64-windows\gvm\jniconfig-x86_64-windows.json" "-H:ResourceConfigurationFiles=D:\code\javafx\windows\demowinfx\target\gluonfx\x86_64-windows\gvm\resourceconfig-x86_64-windows.json" "-H:IncludeResourceBundles=com/sun/javafx/scene/control/skin/resources/controls,com/sun/javafx/scene/control/skin/resources/controls-nt,com.sun.javafx.tk.quantum.QuantumMessagesBundle,com/sun/glass/ui/win/themes" "-Dsvm.platform=org.graalvm.nativeimage.Platform$WINDOWS_AMD64" -cp "C:\Users\User\.m2\repository\com\gluonhq\substrate\0.0.68-SNAPSHOT\substrate-0.0.68-SNAPSHOT.jar;D:\code\javafx\windows\demowinfx\target\gluonfx\x86_64-windows\gvm\tmp\classpathJar.jar" com.example.App
+
+Output
+======
+Warning: Ignoring server-mode native-image argument --no-server.
+Warning: The option '-H:ResourceConfigurationFiles=D:\code\javafx\windows\demowinfx\target\gluonfx\x86_64-windows\gvm\resourceconfig-x86_64-windows.json' is experimental and must be enabled via '-H:+UnlockExperimentalVMOptions' in the future.
+Warning: The option '-H:JNIConfigurationFiles=D:\code\javafx\windows\demowinfx\target\gluonfx\x86_64-windows\gvm\jniconfig-x86_64-windows.json' is experimental and must be enabled via '-H:+UnlockExperimentalVMOptions' in the future.
+Warning: The option '-H:-DeadlockWatchdogExitOnTimeout' is experimental and must be enabled via '-H:+UnlockExperimentalVMOptions' in the future.
+Warning: The option '-H:IncludeResourceBundles=com/sun/javafx/scene/control/skin/resources/controls,com/sun/javafx/scene/control/skin/resources/controls-nt,com.sun.javafx.tk.quantum.QuantumMessagesBundle,com/sun/glass/ui/win/themes' is experimental and must be enabled via '-H:+UnlockExperimentalVMOptions' in the future.
+Warning: The option '-H:DeadlockWatchdogInterval=0' is experimental and must be enabled via '-H:+UnlockExperimentalVMOptions' in the future.
+Warning: The option '-H:+RemoveSaturatedTypeFlows' is experimental and must be enabled via '-H:+UnlockExperimentalVMOptions' in the future.
+Warning: The option '-H:+PrintAnalysisCallTree' is experimental and must be enabled via '-H:+UnlockExperimentalVMOptions' in the future.
+Warning: The option '-H:ReflectionConfigurationFiles=D:\code\javafx\windows\demowinfx\target\gluonfx\x86_64-windows\gvm\reflectionconfig-x86_64-windows.json' is experimental and must be enabled via '-H:+UnlockExperimentalVMOptions' in the future.
+Warning: The option '-H:Log=registerResource:' is experimental and must be enabled via '-H:+UnlockExperimentalVMOptions' in the future.
+Warning: The option '-H:+ExitAfterRelocatableImageWrite' is experimental and must be enabled via '-H:+UnlockExperimentalVMOptions' in the future.
+Warning: The option '-H:EnableURLProtocols=http,https' is experimental and must be enabled via '-H:+UnlockExperimentalVMOptions' in the future.
+Warning: The option '-H:+SharedLibrary' is experimental and must be enabled via '-H:+UnlockExperimentalVMOptions' in the future.
+Warning: The option '-H:TempDirectory=D:\code\javafx\windows\demowinfx\target\gluonfx\x86_64-windows\gvm\tmp' is experimental and must be enabled via '-H:+UnlockExperimentalVMOptions' in the future.
+Warning: Please re-evaluate whether any experimental option is required, and either remove or unlock it. The build output lists all active experimental options, including where they come from and possible alternatives. If you think an experimental option should be considered as stable, please file an issue.
+========================================================================================================================
+GraalVM Native Image: Generating 'com.example.app' (shared library)...
+========================================================================================================================
+For detailed information and explanations on the build output, visit:
+https://github.com/oracle/graal/blob/master/docs/reference-manual/native-image/BuildOutput.md
+------------------------------------------------------------------------------------------------------------------------
+[1/8] Initializing...                                                                                    (8.7s @ 0.11GB)
+ Java version: 21.0.9+7-LTS, vendor version: Oracle GraalVM 21.0.9+7.1
+ Graal compiler: optimization level: 2, target machine: x86-64-v3, PGO: ML-inferred
+ C compiler: cl.exe (microsoft, x64, 19.50.35721)
+ Garbage collector: Serial GC (max heap size: 80% of RAM)
+ 1 user-specific feature(s):
+ - com.oracle.svm.thirdparty.gson.GsonFeature
+------------------------------------------------------------------------------------------------------------------------
+ 10 experimental option(s) unlocked:
+ - '-H:DeadlockWatchdogInterval' (origin(s): command line)
+ - '-H:EnableURLProtocols' (alternative API option(s): --enable-http, --enable-https; origin(s): command line, command line)
+ - '-H:-DeadlockWatchdogExitOnTimeout' (origin(s): command line)
+ - '-H:+ExitAfterRelocatableImageWrite' (origin(s): command line)
+ - '-H:ReflectionConfigurationFiles' (origin(s): command line)
+ - '-H:ResourceConfigurationFiles' (origin(s): command line)
+ - '-H:JNIConfigurationFiles' (origin(s): command line)
+ - '-H:IncludeResourceBundles' (origin(s): command line, command line, command line, command line)
+ - '-H:+SharedLibrary' (alternative API option(s): --shared; origin(s): command line)
+ - '-H:TempDirectory' (origin(s): command line)
+------------------------------------------------------------------------------------------------------------------------
+Build resources:
+ - 5.93GB of memory (75.6% of 7.85GB system memory, determined at start)
+ - 8 thread(s) (100.0% of 8 available processor(s), determined at start)
+[2/8] Performing analysis...  [******]                                                                  (93.7s @ 1.21GB)
+   12,321 reachable types   (89.2% of   13,814 total)
+   20,554 reachable fields  (62.5% of   32,881 total)
+   65,044 reachable methods (64.6% of  100,761 total)
+    3,413 types,   130 fields, and 2,768 methods registered for reflection
+      130 types,   132 fields, and   209 methods registered for JNI access
+        4 native libraries: crypt32, ncrypt, version, winhttp
+# Printing call tree to: D:\code\javafx\windows\demowinfx\target\gluonfx\x86_64-windows\gvm\App\reports\call_tree_com.example.app_20251227_232912.txt
+# Printing list of used methods to: D:\code\javafx\windows\demowinfx\target\gluonfx\x86_64-windows\gvm\App\reports\used_methods_com.example.app_20251227_232914.txt
+# Printing list of used classes to: D:\code\javafx\windows\demowinfx\target\gluonfx\x86_64-windows\gvm\App\reports\used_classes_com.example.app_20251227_232914.txt
+# Printing list of used packages to: D:\code\javafx\windows\demowinfx\target\gluonfx\x86_64-windows\gvm\App\reports\used_packages_com.example.app_20251227_232914.txt
+[3/8] Building universe...                                                                              (10.3s @ 1.93GB)
+[4/8] Parsing methods...      [*****]                                                                   (22.1s @ 1.23GB)
+[5/8] Inlining methods...     [****]                                                                     (2.6s @ 1.99GB)
+[6/8] Compiling methods...    [*************]                                                          (168.3s @ 1.36GB)
+[7/8] Laying out methods...   [***]                                                                      (8.2s @ 1.39GB)
+
+------------------------------------------------------------------------------------------------------------------------
+                       29.1s (8.9% of total time) in 690 GCs | Peak RSS: 3.24GB | CPU load: 5.92
+------------------------------------------------------------------------------------------------------------------------
+Produced artifacts:
+ D:\code\javafx\windows\demowinfx\target\gluonfx\x86_64-windows\gvm\App\com.example.app.h (c_header)
+ D:\code\javafx\windows\demowinfx\target\gluonfx\x86_64-windows\gvm\App\com.example.app_dynamic.h (c_header)
+ D:\code\javafx\windows\demowinfx\target\gluonfx\x86_64-windows\gvm\App\graal_isolate.h (c_header)
+ D:\code\javafx\windows\demowinfx\target\gluonfx\x86_64-windows\gvm\App\graal_isolate_dynamic.h (c_header)
+========================================================================================================================
+Finished generating 'com.example.app' in 5m 27s.
+
+
+Result
+======
+result: 0

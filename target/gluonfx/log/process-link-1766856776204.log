@@ -1,0 +1,19 @@
+Process
+=======
+link
+
+Command Line
+============
+link D:\code\javafx\windows\demowinfx\target\gluonfx\x86_64-windows\gvm\App\launcher.obj D:\code\javafx\windows\demowinfx\target\gluonfx\x86_64-windows\gvm\tmp\SVM-1766856451117\com.example.app.obj D:\code\javafx\windows\demowinfx\target\gluonfx\x86_64-windows\gvm\App\IconGroup.obj j2pkcs11.lib java.lib net.lib nio.lib prefs.lib zip.lib sunmscapi.lib extnet.lib jvm.lib libchelper.lib advapi32.lib iphlpapi.lib secur32.lib userenv.lib version.lib ws2_32.lib winhttp.lib ncrypt.lib crypt32.lib mswsock.lib /NODEFAULTLIB:libcmt.lib /SUBSYSTEM:WINDOWS /ENTRY:mainCRTStartup comdlg32.lib dwmapi.lib gdi32.lib imm32.lib shell32.lib uiautomationcore.lib urlmon.lib winmm.lib glass.lib javafx_font.lib javafx_iio.lib prism_common.lib prism_d3d.lib /WHOLEARCHIVE:glass.lib /WHOLEARCHIVE:javafx_font.lib /WHOLEARCHIVE:javafx_iio.lib /WHOLEARCHIVE:prism_common.lib /WHOLEARCHIVE:prism_d3d.lib /OUT:D:\code\javafx\windows\demowinfx\target\gluonfx\x86_64-windows\App.exe /LIBPATH:C:\Users\User\.gluon\substrate\javafxStaticSdk\21-ea+11.3\windows-x86_64\sdk\lib /LIBPATH:C:\Program Files\java\graalvm-jdk-21.0.9+7.1\lib\svm\clibraries\windows-amd64 /LIBPATH:C:\Program Files\java\graalvm-jdk-21.0.9+7.1\lib\static\windows-amd64
+
+Output
+======
+Microsoft (R) Incremental Linker Version 14.50.35721.0
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+   Creating library D:\code\javafx\windows\demowinfx\target\gluonfx\x86_64-windows\App.lib and object D:\code\javafx\windows\demowinfx\target\gluonfx\x86_64-windows\App.exp
+
+
+Result
+======
+result: 0
