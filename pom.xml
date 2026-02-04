@@ -13,8 +13,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.release>11</maven.compiler.release>
         <javafx.version>21</javafx.version>
-        <charm.version>6.2.3</charm.version>
-        <attach.version>4.0.24-SNAPSHOT</attach.version>
+        <attach.version>4.0.22</attach.version>
         <connect.version>2.0.1</connect.version>
         <javafx.maven.plugin.version>0.0.8</javafx.maven.plugin.version>
         <gluonfx.maven.plugin.version>1.0.28-SNAPSHOT</gluonfx.maven.plugin.version>
@@ -39,11 +38,6 @@
             <groupId>org.openjfx</groupId>
             <artifactId>javafx-controls</artifactId>
             <version>${javafx.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>com.gluonhq</groupId>
-            <artifactId>charm-glisten</artifactId>
-            <version>${charm.version}</version>
         </dependency>
         <dependency>
             <groupId>com.gluonhq.attach</groupId>
