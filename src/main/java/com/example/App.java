@@ -8,7 +8,7 @@ import javafx.scene.control.Label;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 
-public class HelloMobileFX extends Application {
+public class App extends Application {
 
     @Override
     public void start(Stage stage) {
